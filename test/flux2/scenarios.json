@@ -1,0 +1,18 @@
+{
+    "latest_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "flux2": {
+                "version": "latest"
+            }
+        }
+    },
+    "explicit_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "flux2": {
+                "version": "2.1.2"
+            }
+        }
+    }
+}

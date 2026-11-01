@@ -1,8 +1,22 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:26-trixie",
     "customizations": {
         "vscode": {
             "settings": {
+                "telemetry.telemetryLevel": "off",
+                "workbench.enableExperiments": false,
+                "chat.disableAIFeatures": true,
+                "editor.formatOnSave": true,
+                "[json]": {
+                    "editor.defaultFormatter": "vscode.json-language-features"
+                },
+                "[jsonc]": {
+                    "editor.defaultFormatter": "vscode.json-language-features"
+                },
+                "[shellscript]": {
+                    "editor.defaultFormatter": "mkhl.shfmt",
+                    "editor.formatOnSave": true
+                },
                 "json.schemas": [
                     {
                         "fileMatch": [
@@ -13,12 +27,12 @@
                 ]
             },
             "extensions": [
-                "mads-hartmann.bash-ide-vscode"
+                "mads-hartmann.bash-ide-vscode",
+                "timonwong.shellcheck",
+                "mkhl.shfmt",
+                "github.vscode-github-actions"
             ]
         }
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"
