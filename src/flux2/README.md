@@ -7,7 +7,7 @@ Flux is a tool for keeping Kubernetes clusters in sync with sources of configura
 
 ```json
 "features": {
-    "ghcr.io/goldsam/dev-container-features/flux2:1": {}
+    "ghcr.io/laxgoaltender/devcontainer-features/flux2:1": {}
 }
 ```
 
@@ -27,4 +27,4 @@ Flux is a tool for keeping Kubernetes clusters in sync with sources of configura
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/goldsam/dev-container-features/blob/main/src/flux2/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/laxgoaltender/devcontainer-features/blob/main/src/flux2/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
