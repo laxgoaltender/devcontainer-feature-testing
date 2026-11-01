@@ -6,7 +6,7 @@ rm -rf /var/lib/apt/lists/*
 
 FLUX_VERSION=${VERSION:-"latest"}
 
-DEPENDENCIES=('ca-certificates' 'curl')
+DEPENDENCIES=('bash-completion' 'ca-certificates' 'curl')
 
 export DEBIAN_FRONTEND=noninteractive
 
