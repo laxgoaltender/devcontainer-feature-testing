@@ -61,6 +61,7 @@ setup_shell_completion()
 apt_get_update
 install_dependencies
 install_flux
+setup_shell_completion
 
 set +e
 
