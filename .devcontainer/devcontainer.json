@@ -13,10 +13,11 @@
                 "[jsonc]": {
                     "editor.defaultFormatter": "vscode.json-language-features"
                 },
-                "[shellscript]": {
-                    "editor.defaultFormatter": "mkhl.shfmt",
-                    "editor.formatOnSave": true
-                },
+                // I stole this from a friend, but it requires shfmt installed in the container, which I don't have set up
+                //"[shellscript]": {
+                //    "editor.defaultFormatter": "mkhl.shfmt",
+                //    "editor.formatOnSave": true
+                //},
                 "json.schemas": [
                     {
                         "fileMatch": [
