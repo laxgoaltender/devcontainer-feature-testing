@@ -45,6 +45,19 @@ install_flux()
 	fi
 }
 
+setup_shell_completion()
+{
+	# flux bash completion
+    flux completion bash > /etc/bash_completion.d/flux
+
+    # flux zsh completion
+    if [ -e "${USERHOME}/.oh-my-zsh" ]; then
+        mkdir -p "${USERHOME}/.oh-my-zsh/completions"
+        flux completion zsh > "${USERHOME}/.oh-my-zsh/completions/_flux"
+        chown -R "${USERNAME}" "${USERHOME}/.oh-my-zsh"
+    fi
+}
+
 apt_get_update
 install_dependencies
 install_flux
